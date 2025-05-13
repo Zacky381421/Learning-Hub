@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: navy;
+            color: white;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        h2 {
+            margin-top: 10px;
+            font-size: 1.2em;
+            font-style: italic; /* Membuat tulisan miring */
+        }
+
+        .description {
+            margin-top: 20px;
+            font-size: 1.5em;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            gap: 20px;
+        }
+
+        .feature-button {
+            background-color: grey;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .feature-button:hover {
+            background-color: darkgrey;
+        }
+
+        .divider {
+            width: 80%;
+            margin: 40px auto;
+            border-bottom: 2px solid navy;
+        }
+
+        .for-teacher {
+            display: block;
+            background-color: grey;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            margin-top: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .quote {
+            margin-top: 50px;
+            font-style: italic;
+            color: #555;
+        }
+
+        .upload-section {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .upload-button {
+            background-color: navy;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 10px;
+        }
+
+        .attendance-button {
+            background-color: grey;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .attendance-button:hover {
+            background-color: darkgrey;
+        }
+
+        .file-upload {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .file-upload input[type="file"] {
+            padding: 10px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Learning Hub</h1>
+    <h2>Zeal, Confident, Success</h2>
+</header>
+
+<div class="description">
+    <p>Learning Management System</p>
+</div>
+
+<div class="features">
+    <button class="feature-button">Lessons</button>
+    <button class="feature-button">Attendance</button>
+    <button class="feature-button">Submission</button>
+</div>
+
+<div class="divider"></div>
+
+<div class="for-teacher">
+    <button>For Teacher</button>
+</div>
+
+<!-- Upload Section for Lessons -->
+<div class="upload-section">
+    <button class="upload-button">Upload Lessons</button>
+</div>
+
+<!-- Attendance Section -->
+<div class="attendance-section">
+    <h3>Mark Your Attendance</h3>
+    <button class="attendance-button">Mark Attendance</button>
+</div>
+
+<!-- File Upload for Submission -->
+<div class="file-upload">
+    <h3>Upload Your Assignment</h3>
+    <input type="file" name="assignment" id="assignment-file">
+</div>
+
+<div class="quote">
+    <p>"Education is not preparation for life, education is life itself." - John Dewey</p>
+</div>
+
+</body>
+</html>
