@@ -1,169 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning Hub</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: white;
-            color: #333;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Learning Hub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
 
-        header {
-            background-color: navy;
-            color: white;
-            padding: 20px;
-        }
+    header {
+      background-color: navy;
+      color: white;
+      padding: 30px 20px;
+    }
 
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
+    h1 {
+      margin: 0;
+      font-size: 3em;
+    }
 
-        h2 {
-            margin-top: 10px;
-            font-size: 1.2em;
-            font-style: italic; /* Membuat tulisan miring */
-        }
+    .slogan {
+      margin-top: 10px;
+      font-style: italic;
+      font-size: 1.2em;
+      color: #ddd;
+    }
 
-        .description {
-            margin-top: 20px;
-            font-size: 1.5em;
-        }
+    .description {
+      font-size: 1.5em;
+      margin: 30px 0;
+      color: #444;
+    }
 
-        .features {
-            display: flex;
-            justify-content: center;
-            margin-top: 50px;
-            gap: 20px;
-        }
+    .features {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
 
-        .feature-button {
-            background-color: grey;
-            color: white;
-            border: none;
-            padding: 15px 30px;
-            font-size: 1.2em;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
+    .feature-button {
+      background-color: grey;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 200px;
+    }
 
-        .feature-button:hover {
-            background-color: darkgrey;
-        }
+    .feature-button:hover {
+      background-color: #5a5a5a;
+    }
 
-        .divider {
-            width: 80%;
-            margin: 40px auto;
-            border-bottom: 2px solid navy;
-        }
+    .divider {
+      width: 80%;
+      margin: 40px auto;
+      border-bottom: 2px solid navy;
+    }
 
-        .for-teacher {
-            display: block;
-            background-color: grey;
-            color: white;
-            padding: 15px 30px;
-            font-size: 1.2em;
-            margin-top: 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+    .for-teacher-button {
+      background-color: grey;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 200px;
+      margin-bottom: 40px;
+    }
 
-        .quote {
-            margin-top: 50px;
-            font-style: italic;
-            color: #555;
-        }
+    .for-teacher-button:hover {
+      background-color: #5a5a5a;
+    }
 
-        .upload-section {
-            margin-top: 30px;
-            text-align: center;
-        }
+    .quote {
+      font-style: italic;
+      color: #666;
+      margin: 50px 20px 30px;
+      font-size: 1em;
+    }
 
-        .upload-button {
-            background-color: navy;
-            color: white;
-            padding: 10px 20px;
-            font-size: 1.2em;
-            cursor: pointer;
-            border-radius: 5px;
-            margin: 10px;
-        }
-
-        .attendance-button {
-            background-color: grey;
-            color: white;
-            padding: 10px 20px;
-            font-size: 1.2em;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        .attendance-button:hover {
-            background-color: darkgrey;
-        }
-
-        .file-upload {
-            margin-top: 20px;
-            text-align: center;
-        }
-
-        .file-upload input[type="file"] {
-            padding: 10px;
-            font-size: 1em;
-            cursor: pointer;
-        }
-    </style>
+    @media (min-width: 600px) {
+      .features {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<header>
+  <header>
     <h1>Learning Hub</h1>
-    <h2>Zeal, Confident, Success</h2>
-</header>
+    <div class="slogan">Zeal, Confident, Success</div>
+  </header>
 
-<div class="description">
-    <p>Learning Management System</p>
-</div>
+  <div class="description">Learning Management System</div>
 
-<div class="features">
+  <div class="features">
     <button class="feature-button">Lessons</button>
     <button class="feature-button">Attendance</button>
     <button class="feature-button">Submission</button>
-</div>
+  </div>
 
-<div class="divider"></div>
+  <div class="divider"></div>
 
-<div class="for-teacher">
-    <button>For Teacher</button>
-</div>
+  <div>
+    <button class="for-teacher-button">For Teacher</button>
+  </div>
 
-<!-- Upload Section for Lessons -->
-<div class="upload-section">
-    <button class="upload-button">Upload Lessons</button>
-</div>
-
-<!-- Attendance Section -->
-<div class="attendance-section">
-    <h3>Mark Your Attendance</h3>
-    <button class="attendance-button">Mark Attendance</button>
-</div>
-
-<!-- File Upload for Submission -->
-<div class="file-upload">
-    <h3>Upload Your Assignment</h3>
-    <input type="file" name="assignment" id="assignment-file">
-</div>
-
-<div class="quote">
-    <p>"Education is not preparation for life, education is life itself." - John Dewey</p>
-</div>
+  <div class="quote">
+    "Education is not preparation for life, education is life itself." - John Dewey
+  </div>
 
 </body>
 </html>
